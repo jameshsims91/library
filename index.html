@@ -14,18 +14,18 @@
   <main>
     <h2>Add New Book</h2>
     <div class="action-bar">
-      <button command="show-modal" commandfor="form-dialog" class="add" id="open-form-btn">New Book</button>
+      <button command="show-modal" commandfor="form-dialog" type="button" class="add" id="open-form-btn">New Book</button>
     </div>
 
     <dialog id="form-dialog">
       <form method="dialog" id="bookForm">
         <div class="form-field">
           <label for="bookTitle">Title:</label>
-          <input type="text" id="bookTitle" name="book_title" placeholder="ex. The 300" required />
+          <input type="text" id="bookTitle" name="book_title" placeholder="ex. The 300" autofocus required />
         </div>
         <div class="form-field">
           <label for="bookAuthor">Author:</label>
-          <input type="text" id="bookAuthor" name="author_name" placeholder="ex. John Doe" autofocus required />
+          <input type="text" id="bookAuthor" name="author_name" placeholder="ex. John Doe" required />
         </div>
         <div class="form-field">
           <label for="bookPages">Pages:</label>
