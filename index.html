@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>James' Library</title>
+</head>
+<body>
+  <header>
+    <h1>James' Library</h1>
+  </header>
+  <main>
+    <h2>Add New Book</h2>
+    <div class="action-bar">
+      <button command="show-modal" commandfor="form-dialog" class="add" id="open-form-btn">New Book</button>
+    </div>
+
+    <dialog id="form-dialog">
+      <form method="dialog" id="bookForm">
+        <div class="form-field">
+          <label for="bookTitle">Title:</label>
+          <input type="text" id="bookTitle" name="book_title" placeholder="ex. The 300" required />
+        </div>
+        <div class="form-field">
+          <label for="bookAuthor">Author:</label>
+          <input type="text" id="bookAuthor" name="author_name" placeholder="ex. John Doe" autofocus required />
+        </div>
+        <div class="form-field">
+          <label for="bookPages">Pages:</label>
+          <input type="number" id="bookPages" name="page-count" placeholder="ex. 24" required min="1">
+        </div>
+        <div class="form-field">
+          <label for="bookRead">Have you read it?</label>
+          <input type="checkbox" id="bookRead" required>
+        </div>
+        <div class="form-action">
+          <button id="addBtn" value="default" class="btn" type="submit">Add Book</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="books-list">
+      <h2>Books in My Library</h2>
+      <div class="booklist">
+        <ol id="bookList" class="list">
+        </ol>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(222, 184, 135);
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color:rgb(24, 43, 73);
+}
+
+h1, h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,'sans-serif', serif;
+  color: black;  
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.action-bar {
+  text-align: center;
+}
+
+.add {
+  background-color: rgb(192, 90, 70);
+  color: black;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.booklist {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  border: 3px solid black;
+  border-radius: 10px; 
+}
+
+li {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  background-color: rgb(24, 43, 73);
+  border: 3px solid #ddd;
+  border-radius: 5px;
+}
+
+.book-card {
+  padding: 15px;
+  margin-bottom: 10px'
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card button {
+  margin-top: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
